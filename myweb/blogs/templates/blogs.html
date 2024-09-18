@@ -12,6 +12,12 @@
 
     {% load static %}
     <img src="{% static 'download.jpg' %}" height="400">
+
+    <ul>
+        {% for x in blogs %}
+          <li>{{ x.title }} {{ x.detail }}</li>
+        {% endfor %}
+    </ul>
 </body>
 
 </html>
